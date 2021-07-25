@@ -7,9 +7,9 @@ const imaps = require('imap-simple');
 
 const PORT = process.env.PORT || 4001;
 
-const IMAPconnection;
-const unread;
-const ActiveSocket;
+let IMAPconnection;
+let unread;
+let ActiveSocket;
 
 const app = express();
 app.use(cors());
