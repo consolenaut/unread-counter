@@ -55,7 +55,7 @@ const App = () => {
     <AppContainer>
       <Header>
         <CountContainer unreads={response}>
-          <Count>{response ? response : "?"}</Count>
+          <Count>{response ? response : ""}</Count>
         </CountContainer>
       </Header>
     </AppContainer>
