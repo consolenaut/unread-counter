@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import socketIOClient from "socket.io-client";
 
-const endpoint = "http://unread-counter-dotblack.dotblack.io";
+const endpoint = process.env.REACT_APP_SERVER_ENDPOINT || "http://192.168.174.6:4001" || "http://unread-counter-dotblack.dotblack.io";
 
 const AppContainer = styled.div`
   text-align: center;
